@@ -1,8 +1,27 @@
 aid: dyndrite
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/dyndrite.png
 name: Dyndrite
-description: 'Dyndrite is a company surfaced as a portfolio company of amplify-partners and added to the
-  API Evangelist network as a stub for enrichment. Sector: ai-ml. This profile is a lead awaiting the
-  enrichment pipeline.'
+description: 'Dyndrite develops GPU-accelerated software for digital and additive manufacturing, focused
+  on laser powder bed fusion (LPBF) and other metal 3D-printing processes. Its platform streamlines build
+  preparation, materials development, process qualification, and production automation for industrial
+  manufacturers, machine builders (OEMs), and software vendors. Products include Dyndrite LPBF Pro for
+  end users and the Application Development Kit (ADK) for machine makers, exposing low-level toolpathing
+  control (Vector and Raster Toolpathing APIs) plus a scriptable Python geometry engine. Dyndrite is
+  backed by Amplify Partners and is tracked in the API Evangelist network as an AI/ML and manufacturing
+  automation company. It does not currently publish a public web/REST API, OpenAPI definition, or
+  self-service developer portal; its APIs are embedded scripting and integration interfaces delivered
+  inside its desktop software and ADK.'
 url: https://raw.githubusercontent.com/api-evangelist/dyndrite/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +31,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
 - Ai Ml
+- Additive Manufacturing
+- 3D Printing
+- Digital Manufacturing
+- Manufacturing Automation
+- GPU Computing
+- Toolpathing
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +48,26 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/dyndrite-domain-security.yml
 - type: Website
-  url: https://dyndrite.com
+  url: https://www.dyndrite.com
+- type: About
+  url: https://www.dyndrite.com/about
+- type: Blog
+  url: https://www.dyndrite.com/blog
+- type: BlogRSS
+  url: https://www.dyndrite.com/blog?format=rss
+- type: GitHubOrganization
+  url: https://github.com/dyndrite
+- type: Support
+  url: https://www.dyndrite.com/contact
+- type: PrivacyPolicy
+  url: https://www.dyndrite.com/privacy-and-terms/privacy-policy
+- type: TermsOfService
+  url: https://www.dyndrite.com/privacy-and-terms/eula
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
